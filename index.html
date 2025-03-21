@@ -66,7 +66,32 @@
         }
         
         /* 头部区域 */
-        // ... existing code ...
+     header {
+            text-align: center;
+            padding: 60px 0;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #222;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -86,6 +111,42 @@
         <p class="tagline">网站开发者 | 技术爱好者 | 创新思考者</p>
     </header>
     
-    // ... existing code ...
+   <div class="container">
+        <section id="about">
+            <h2>关于我</h2>
+            <p>欢迎访问我的个人网站！我是陈某，这是我的个人空间。我喜欢探索新技术，解决问题，并不断学习新知识。</p>
+            <p>这个网站将展示我的项目、技能和经验。我期待与志同道合的人交流合作，共同创造价值。</p>
+        </section>
+        
+        <section id="experience">
+            <h2>经验与技能</h2>
+            <p>我擅长的领域包括网站开发、数据分析和项目管理。我热衷于使用技术解决实际问题，并致力于创造直观、易用的数字体验。</p>
+            <!-- 此处可以添加更多详细内容 -->
+        </section>
+        
+        <section id="projects">
+            <h2>项目展示</h2>
+            <p>这里将展示我的一些项目作品。目前正在建设中，敬请期待！</p>
+            <!-- 此处可以添加项目卡片或案例展示 -->
+        </section>
+        
+        <section id="contact">
+            <h2>联系我</h2>
+            <p>如果您有任何问题或合作意向，欢迎随时联系我。</p>
+            <p>邮箱：chenl@linux.do</p>
+            
+            <div class="social-links">
+                <!-- 替换#为你的实际社交媒体链接 -->
+                <a href="#" class="social-btn">微信</a>
+                <a href="#" class="social-btn">知乎</a>
+                <a href="#" class="social-btn">GitHub</a>
+                <a href="#" class="social-btn">LinkedIn</a>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 陈某的个人网站. 保留所有权利。</p>
+    </footer>
 </body>
 </html>
