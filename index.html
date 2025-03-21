@@ -22,152 +22,70 @@
             padding: 20px;
         }
         
-        /* 头部区域 */
-        header {
-            text-align: center;
-            padding: 60px 0;
-        }
-        
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-            border: 3px solid #fff;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: #222;
-        }
-        
-        .tagline {
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        
-        /* 主要内容区 */
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        /* 导航菜单样式 */
+        nav {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             margin-bottom: 30px;
         }
         
-        section {
-            margin-bottom: 40px;
-        }
-        
-        h2 {
-            border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            color: #2d2d2d;
-        }
-        
-        p {
-            margin-bottom: 15px;
-        }
-        
-        /* 联系方式与社交媒体 */
-        .social-links {
+        .nav-container {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 30px;
+            padding: 15px 0;
         }
         
-        .social-btn {
-            background: #f5f5f5;
-            padding: 10px 20px;
-            border-radius: 50px;
+        .nav-item {
+            margin: 0 15px;
             text-decoration: none;
-            color: #333;
+            color: #555;
             font-weight: 500;
+            position: relative;
+            padding: 5px 0;
             transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
         }
         
-        .social-btn:hover {
-            background: #e0e0e0;
-            transform: translateY(-2px);
+        .nav-item:hover {
+            color: #ff6b6b;
         }
         
-        /* 页脚 */
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            color: #888;
-            font-size: 0.9rem;
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #ff6b6b;
+            transition: width 0.3s ease;
         }
         
-        /* 响应式设计 */
-        @media (max-width: 768px) {
-            .container {
-                padding: 25px;
-            }
-            
-            header {
-                padding: 40px 0;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
+        .nav-item:hover::after {
+            width: 100%;
         }
+        
+        /* 头部区域 */
+        // ... existing code ...
     </style>
 </head>
 <body>
+    <!-- 新增导航菜单 -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-item">首页</a>
+            <a href="heart.html" class="nav-item">爱心特效</a>
+            <a href="#about" class="nav-item">关于我</a>
+            <a href="#projects" class="nav-item">项目展示</a>
+            <a href="#contact" class="nav-item">联系方式</a>
+        </div>
+    </nav>
+
     <header>
-        <!-- 替换图片URL为你的个人头像或删除这一行 -->
-        <img src="https://via.placeholder.com/150" alt="个人头像" class="profile-img">
-        <h1>陈某</h1>
+        <h1>测试</h1>
         <p class="tagline">网站开发者 | 技术爱好者 | 创新思考者</p>
     </header>
     
-    <div class="container">
-        <section id="about">
-            <h2>关于我</h2>
-            <p>欢迎访问我的个人网站！我是陈某，这是我的个人空间。我喜欢探索新技术，解决问题，并不断学习新知识。</p>
-            <p>这个网站将展示我的项目、技能和经验。我期待与志同道合的人交流合作，共同创造价值。</p>
-        </section>
-        
-        <section id="experience">
-            <h2>经验与技能</h2>
-            <p>我擅长的领域包括网站开发、数据分析和项目管理。我热衷于使用技术解决实际问题，并致力于创造直观、易用的数字体验。</p>
-            <!-- 此处可以添加更多详细内容 -->
-        </section>
-        
-        <section id="projects">
-            <h2>项目展示</h2>
-            <p>这里将展示我的一些项目作品。目前正在建设中，敬请期待！</p>
-            <!-- 此处可以添加项目卡片或案例展示 -->
-        </section>
-        
-        <section id="contact">
-            <h2>联系我</h2>
-            <p>如果您有任何问题或合作意向，欢迎随时联系我。</p>
-            <p>邮箱：your.email@example.com</p>
-            
-            <div class="social-links">
-                <!-- 替换#为你的实际社交媒体链接 -->
-                <a href="#" class="social-btn">微信</a>
-                <a href="#" class="social-btn">知乎</a>
-                <a href="#" class="social-btn">GitHub</a>
-                <a href="#" class="social-btn">LinkedIn</a>
-            </div>
-        </section>
-    </div>
-    
-    <footer>
-        <p>&copy; 2024 陈某的个人网站. 保留所有权利。</p>
-    </footer>
+    // ... existing code ...
 </body>
 </html>
